@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/betclic-clone/static/css/main.6912dde1.css",
-    "main.js": "/betclic-clone/static/js/main.c6fb3db0.js",
+    "main.js": "/betclic-clone/static/js/main.4b066a43.js",
     "static/media/basketball.png": "/betclic-clone/static/media/basketball.30bbf0372df41d94b1b9.png",
     "static/media/tennis.png": "/betclic-clone/static/media/tennis.3561be0f741c42e880ce.png",
     "static/media/gaming.png": "/betclic-clone/static/media/gaming.1d1ba87a45fa26f44e1d.png",
@@ -21,10 +21,10 @@
     "static/media/germany.png": "/betclic-clone/static/media/germany.cc670a050b591bf6656d.png",
     "index.html": "/betclic-clone/index.html",
     "main.6912dde1.css.map": "/betclic-clone/static/css/main.6912dde1.css.map",
-    "main.c6fb3db0.js.map": "/betclic-clone/static/js/main.c6fb3db0.js.map"
+    "main.4b066a43.js.map": "/betclic-clone/static/js/main.4b066a43.js.map"
   },
   "entrypoints": [
     "static/css/main.6912dde1.css",
-    "static/js/main.c6fb3db0.js"
+    "static/js/main.4b066a43.js"
   ]
 }
