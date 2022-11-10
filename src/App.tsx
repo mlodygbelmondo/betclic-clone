@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Navbar, Homepage, Livepage, Footbar } from './components'
+import { useState } from 'react'
+import './scss/index.scss'
+import Promotionpage from './components/Promotionpage'
+
+type CurrentPage = 'home' | 'live' | 'promo'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [currentPage, setCurrentPage] = useState<CurrentPage>('home')
+    const [isCouponOpen, setIsCouponOpen] = useState<boolean>(false)
+
+    return (
+        <BrowserRouter>
+            <div className='app'>
+                <Navbar currentPage={currentPage} />
+                <Routes>
+                    <Route
+                        path='/betclic-clone/'
+                        element={
+                            <Homepage
+                                setCurrentPage={setCurrentPage}
+                                setIsCouponOpen={setIsCouponOpen}
+                                isCouponOpen={isCouponOpen}
+                            />
+                        }
+                    />
+                    <Route
+                        path='/betclic-clone/live/'
+                        element={<Livepage setCurrentPage={setCurrentPage} />}
+                    />
+                    <Route
+                        path='/betclic-clone/promotion/'
+                        element={
+                            <Promotionpage setCurrentPage={setCurrentPage} />
+                        }
+                    />
+                </Routes>
+                <Footbar
+                    setIsCouponOpen={setIsCouponOpen}
+                    isCouponOpen={isCouponOpen}
+                />
+            </div>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App

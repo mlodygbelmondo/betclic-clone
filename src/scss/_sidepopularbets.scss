@@ -1,0 +1,54 @@
+.side-popularbets-container {
+    background-color: white;
+    padding: 0.7rem 0.5rem 0.7rem 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    box-shadow: 4px 7px 45px -24px rgba(66, 68, 90, 1);
+    // width: 20rem;
+    h5 {
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+    }
+    .popularbet-over {
+        cursor: pointer;
+        transition: var(--transition);
+        padding-top: 0.85rem;
+        max-width: 18rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.325rem;
+        margin-bottom: -0.2rem;
+        .fa-arrow-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.325rem;
+        }
+        .popularbet-hr {
+            hr.side-hr {
+                border: 0;
+                height: 0;
+                border-top: 1px solid rgb(220, 217, 217);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        .side-popularbet {
+            margin-left: 0.325rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            gap: 0.35rem;
+            img {
+                height: 1.2rem;
+            }
+        }
+        &:hover {
+            background-color: rgb(247, 246, 246);
+        }
+    }
+}

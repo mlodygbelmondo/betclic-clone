@@ -1,0 +1,231 @@
+.bet-card-container {
+    user-select: none;
+    background-color: white;
+    border-radius: 0.4rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0.4rem 0.65rem;
+    -webkit-box-shadow: 4px 4px 17px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 4px 4px 17px -12px rgba(66, 68, 90, 1);
+    box-shadow: 4px 4px 17px -12px rgba(66, 68, 90, 1);
+    p {
+        color: gray;
+        font-size: 0.6rem;
+    }
+    .left-bet-card-container {
+        .category-and-date-container {
+            margin-bottom: 0.2rem;
+            display: flex;
+            justify-content: space-between;
+
+            .category-container {
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                img {
+                    height: 1rem;
+                    border: 100%;
+                }
+            }
+            .date-container {
+                padding-right: 0.25rem;
+            }
+        }
+
+        .team-names {
+            h5 {
+                font-weight: 700;
+                .team-gap {
+                    margin: 0 0.45rem;
+                }
+                .bold-minus {
+                    font-size: 1.025rem;
+                }
+            }
+        }
+    }
+    .middle-bet-card-container {
+        .bet-1-name-container {
+            margin-bottom: 0.35rem;
+        }
+        .bets-buttons-container {
+            width: 100%;
+            button {
+                margin-bottom: 0.35rem;
+                width: 100%;
+                h5 {
+                    font-size: 0.67rem;
+                    font-weight: 500;
+                }
+                h4 {
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                }
+                gap: 0.13rem;
+                border-radius: 0.4rem;
+                border: 1px solid transparent;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #fc0;
+                align-self: stretch;
+                padding: 0.4rem 0.7rem;
+                cursor: pointer;
+                transition: var(--transition-fast);
+                &:hover {
+                    background: rgb(222, 179, 11);
+                }
+                &.active {
+                    background: #111;
+                    color: #fc0;
+                }
+            }
+            .bet-percent {
+                width: 100%;
+                display: flex;
+                gap: 0.4rem;
+                align-items: center;
+                .percent {
+                    color: rgb(89, 89, 89);
+                    font-weight: 600;
+                    font-size: 0.5rem;
+                }
+                .chart {
+                    background-color: rgb(243, 235, 235);
+                    height: 0.35rem;
+                    width: 100%;
+                    border-radius: 1rem;
+                    display: flex;
+                    align-items: center;
+                    .chart-content {
+                        background-color: rgb(75, 74, 72);
+                        border-radius: 1rem;
+                        height: 0.35rem;
+                    }
+                }
+            }
+            .left-bets-buttons-container {
+                width: 50%;
+            }
+            .right-bets-buttons-container {
+                width: 50%;
+            }
+            justify-content: space-evenly;
+            display: flex;
+            gap: 0.7rem;
+        }
+    }
+    .right-bet-card-container {
+        .bet-2-name-container {
+            margin-bottom: 0.35rem;
+        }
+        .bets-buttons-container {
+            width: 100%;
+            button {
+                margin-bottom: 0.35rem;
+                width: 100%;
+                h5 {
+                    font-size: 0.67rem;
+                    font-weight: 500;
+                }
+                h4 {
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                }
+                gap: 0.13rem;
+                border-radius: 0.4rem;
+                border: 1px solid transparent;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #fc0;
+                align-self: stretch;
+                padding: 0.4rem 0.7rem;
+                cursor: pointer;
+                transition: var(--transition);
+                &:hover {
+                    background: rgb(222, 179, 11);
+                }
+                &.active {
+                    background: #111;
+                    color: #fc0;
+                }
+            }
+            .bet-percent {
+                width: 100%;
+                display: flex;
+                gap: 0.4rem;
+                align-items: center;
+                .percent {
+                    color: rgb(89, 89, 89);
+                    font-weight: 600;
+                    font-size: 0.5rem;
+                }
+                .chart {
+                    background-color: rgb(243, 235, 235);
+                    height: 0.35rem;
+                    width: 100%;
+                    border-radius: 1rem;
+                    display: flex;
+                    align-items: center;
+                    .chart-content {
+                        background-color: rgb(75, 74, 72);
+                        border-radius: 1rem;
+                        height: 0.35rem;
+                    }
+                }
+            }
+            .left-bets-buttons-container {
+                width: 50%;
+            }
+            .right-bets-buttons-container {
+                width: 50%;
+            }
+            justify-content: space-evenly;
+            display: flex;
+            gap: 0.7rem;
+        }
+    }
+    transition: var(--transition);
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(249, 247, 247);
+    }
+
+    @media only screen and (max-device-width: 1570px) {
+        grid-template-columns: 1.2fr 2fr;
+        .right-bet-card-container {
+            display: none;
+        }
+    }
+    @media only screen and (max-device-width: 1320px) {
+        .left-bet-card-container {
+            .category-container {
+                width: 50%;
+            }
+            .team-names {
+                h5 {
+                    font-size: 0.75rem;
+                    .team-gap {
+                        margin: 0 0.22rem;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-device-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        .middle-bet-card-container {
+            .bet-1-name-container {
+                display: none;
+            }
+        }
+    }
+}

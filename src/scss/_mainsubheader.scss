@@ -1,0 +1,52 @@
+.main-subheader-container {
+    .over-label {
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+
+        .red-underline {
+            height: 3px;
+            background-color: red;
+            position: relative;
+            top: 5px;
+        }
+
+        .subheader-label {
+            cursor: pointer;
+            color: rgb(230, 20, 20);
+            padding: 0 0.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 0.3rem;
+            .fa-star {
+                font-size: 1.1rem;
+            }
+            h5 {
+                top: 1px;
+                position: relative;
+                font-size: 1rem;
+            }
+
+            text-transform: uppercase;
+        }
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0)
+        );
+        margin: 0;
+        align-self: stretch;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    @media only screen and (min-device-width: 1200px) {
+    }
+}

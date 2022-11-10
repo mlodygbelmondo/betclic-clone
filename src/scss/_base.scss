@@ -1,0 +1,79 @@
+:root {
+    --navbar-clr: rgb(202, 26, 26);
+    --navbar-font: white;
+    --transition: 0.3s ease-out;
+    --transition-fast: 0.15s ease-out;
+    --fixed-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --elevate-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    --svg-color: black;
+    --background: white;
+    --light-blue: #4895ef;
+    --active-link: rgb(255, 255, 96);
+    --all-bets-clr: rgb(229, 37, 37);
+    --all-bets-clr-hover: rgb(203, 35, 35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.app {
+    background-color: var(--background);
+}
+
+html,
+body,
+.app {
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mx-3 {
+    margin: 0 1.5rem;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+    html,
+    body,
+    .app {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .app::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+    .mx-3 {
+        margin: 0 5rem;
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(233, 67, 67);
+}
