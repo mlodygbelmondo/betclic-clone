@@ -21,7 +21,7 @@ const Navbar = ({ currentPage }: NavProps) => {
         <nav>
             <div className='container py-3 mx-3'>
                 <div className='brand'>
-                    <a href='/betclic-clone/'>
+                    <a href='/betclic-clone'>
                         <span>BETCLIC.</span>
                     </a>
                     <div className='hr'></div>
@@ -29,7 +29,7 @@ const Navbar = ({ currentPage }: NavProps) => {
                         <ul>
                             <li>
                                 <a
-                                    href='/betclic-clone/'
+                                    href='/betclic-clone'
                                     className={`${
                                         currentPage === 'home' ? 'active' : ''
                                     }`}
@@ -39,7 +39,7 @@ const Navbar = ({ currentPage }: NavProps) => {
                             </li>
                             <li>
                                 <a
-                                    href='/betclic-clone/live/'
+                                    href='/betclic-clone/live'
                                     className={`live-category ${
                                         currentPage === 'live' ? 'active' : ''
                                     }`}
@@ -52,7 +52,7 @@ const Navbar = ({ currentPage }: NavProps) => {
                             </li>
                             <li>
                                 <a
-                                    href='/betclic-clone/promotion/'
+                                    href='/betclic-clone/promotion'
                                     className={`${
                                         currentPage === 'promo' ? 'active' : ''
                                     }`}

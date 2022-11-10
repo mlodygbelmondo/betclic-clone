@@ -16,7 +16,7 @@ function App() {
                 <Navbar currentPage={currentPage} />
                 <Routes>
                     <Route
-                        path='/betclic-clone/'
+                        path='/betclic-clone'
                         element={
                             <Homepage
                                 setCurrentPage={setCurrentPage}
@@ -26,11 +26,11 @@ function App() {
                         }
                     />
                     <Route
-                        path='/betclic-clone/live/'
+                        path='/betclic-clone/live'
                         element={<Livepage setCurrentPage={setCurrentPage} />}
                     />
                     <Route
-                        path='/betclic-clone/promotion/'
+                        path='/betclic-clone/promotion'
                         element={
                             <Promotionpage setCurrentPage={setCurrentPage} />
                         }

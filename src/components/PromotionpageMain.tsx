@@ -7,7 +7,7 @@ const PromotionpageMain = () => {
             <img src={sad} alt='Sad image' />
             <h4>Nic tu nie ma!</h4>
             <p>Aktualnie nie ma żadnych promocji.</p>
-            <a href='/betclic-clone/'>
+            <a href='/betclic-clone'>
                 <button>Powrót</button>
             </a>
         </div>

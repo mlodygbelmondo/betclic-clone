@@ -7,7 +7,7 @@ const Livepagemain = () => {
             <img src={sad} alt='Sad image' />
             <h4>Nic tu nie ma!</h4>
             <p>Aktualnie brak zakładów na żywo.</p>
-            <a href='/betclic-clone/'>
+            <a href='/betclic-clone'>
                 <button>Powrót</button>
             </a>
         </div>
