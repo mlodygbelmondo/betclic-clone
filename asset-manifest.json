@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/betclic-clone/static/css/main.6912dde1.css",
+    "main.js": "/betclic-clone/static/js/main.08d62ba2.js",
+    "static/media/basketball.png": "/betclic-clone/static/media/basketball.30bbf0372df41d94b1b9.png",
+    "static/media/tennis.png": "/betclic-clone/static/media/tennis.3561be0f741c42e880ce.png",
+    "static/media/gaming.png": "/betclic-clone/static/media/gaming.1d1ba87a45fa26f44e1d.png",
+    "static/media/european-union.png": "/betclic-clone/static/media/european-union.4aeea4b3410c611621b5.png",
+    "static/media/formula.png": "/betclic-clone/static/media/formula.9f1da96396afdd59a49d.png",
+    "static/media/football.png": "/betclic-clone/static/media/football.27261734797ec8bca5bb.png",
+    "static/media/mma.png": "/betclic-clone/static/media/mma.840896743299634e3a95.png",
+    "static/media/sad.png": "/betclic-clone/static/media/sad.504068f9c7dd8eb71710.png",
+    "static/media/italy.png": "/betclic-clone/static/media/italy.593eba8ff91604e2bcfb.png",
+    "static/media/france.png": "/betclic-clone/static/media/france.73f91b4e96d67f8a03f0.png",
+    "static/media/poland.png": "/betclic-clone/static/media/poland.a498d547b8c6fc3ccf55.png",
+    "static/media/volley-ball.png": "/betclic-clone/static/media/volley-ball.ca19bf8fa7644604f0a0.png",
+    "static/media/golf.png": "/betclic-clone/static/media/golf.27ccdb5cf2a4dd0fa0e7.png",
+    "static/media/england.png": "/betclic-clone/static/media/england.5050aaf9d71e9bafed9a.png",
+    "static/media/winner.png": "/betclic-clone/static/media/winner.12e3fdca4c3366f92b9f.png",
+    "static/media/spain.png": "/betclic-clone/static/media/spain.7ab20088ad372c62ab72.png",
+    "static/media/germany.png": "/betclic-clone/static/media/germany.cc670a050b591bf6656d.png",
+    "index.html": "/betclic-clone/index.html",
+    "main.6912dde1.css.map": "/betclic-clone/static/css/main.6912dde1.css.map",
+    "main.08d62ba2.js.map": "/betclic-clone/static/js/main.08d62ba2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6912dde1.css",
+    "static/js/main.08d62ba2.js"
+  ]
+}
